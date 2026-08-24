@@ -1,157 +1,137 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="250" viewBox="0 0 1000 250" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1000" height="250" viewBox="0 0 1000 250" role="img" aria-labelledby="title desc">
   <title id="title">Contact signal</title>
-  <desc id="desc">A quiet signal travels from personal email through Weekly Backing Track to the Jam Tracks Hub music platform</desc>
+  <desc id="desc">One continuous signal travels from personal email through Weekly Backing Track to the Jam Tracks Hub music platform</desc>
 
   <style>
-    .signal-left,
-    .signal-center,
-    .signal-right,
-    .signal-bridge {
+    .signal-flow {
       fill: none;
       stroke: #A8754F;
+      stroke-width: 2.5;
       stroke-linecap: round;
       stroke-linejoin: round;
-      stroke-width: 2;
-      stroke-dasharray: 10 12;
+      stroke-dasharray: 82 918;
       opacity: 0;
-      animation: signal-dash 1.8s linear infinite;
+      animation: signal-propagation 6s linear infinite;
     }
 
-    .signal-left { animation: signal-dash 1.8s linear infinite, stage-left 6s ease-in-out infinite; }
-    .signal-center { animation: signal-dash 1.8s linear infinite, stage-center 6s ease-in-out infinite; }
-    .signal-right { animation: signal-dash 1.8s linear infinite, stage-right 6s ease-in-out infinite; }
-    .bridge-one { animation: signal-dash 1.8s linear infinite, bridge-one 6s ease-in-out infinite; }
-    .bridge-two { animation: signal-dash 1.8s linear infinite, bridge-two 6s ease-in-out infinite; }
+    .communication-accent,
+    .audio-accent,
+    .digital-accent {
+      fill: none;
+      stroke: #355B4B;
+      stroke-width: 2;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      opacity: 0;
+    }
+
+    .communication-accent { animation: communication-stage 6s ease-in-out infinite; }
+    .audio-accent { animation: audio-stage 6s ease-in-out infinite; }
+    .digital-accent { animation: digital-stage 6s ease-in-out infinite; }
 
     .travel-node {
       fill: #355B4B;
       opacity: 0;
-      animation: node-travel 6s linear infinite;
     }
 
-    .final-pulse {
+    .endpoint-pulse {
       fill: none;
       stroke: #A8754F;
       stroke-width: 2;
       opacity: 0;
-      transform-box: view-box;
-      transform-origin: 936px 185px;
-      animation: final-pulse 6s ease-out infinite;
+      animation: endpoint-pulse 6s ease-in-out infinite;
     }
 
-    @keyframes signal-dash {
-      to { stroke-dashoffset: -44; }
+    @keyframes signal-propagation {
+      0%, 3% { opacity: 0; stroke-dashoffset: 0; }
+      7% { opacity: 0.82; stroke-dashoffset: 0; }
+      84% { opacity: 0.82; stroke-dashoffset: -918; }
+      88%, 100% { opacity: 0; stroke-dashoffset: -1000; }
     }
 
-    @keyframes stage-left {
-      0%, 3%, 32%, 100% { opacity: 0; }
-      7%, 27% { opacity: 0.72; }
+    @keyframes communication-stage {
+      0%, 3%, 34%, 100% { opacity: 0; }
+      8%, 28% { opacity: 0.58; }
     }
 
-    @keyframes stage-center {
-      0%, 30%, 65%, 100% { opacity: 0; }
-      37%, 59% { opacity: 0.72; }
+    @keyframes audio-stage {
+      0%, 29%, 65%, 100% { opacity: 0; }
+      38%, 57% { opacity: 0.62; }
+      47% { opacity: 0.8; }
     }
 
-    @keyframes stage-right {
-      0%, 63%, 93%, 100% { opacity: 0; }
-      70%, 87% { opacity: 0.72; }
+    @keyframes digital-stage {
+      0%, 60%, 89%, 100% { opacity: 0; }
+      69%, 84% { opacity: 0.62; }
     }
 
-    @keyframes bridge-one {
-      0%, 25%, 39%, 100% { opacity: 0; }
-      29%, 35% { opacity: 0.55; }
-    }
-
-    @keyframes bridge-two {
-      0%, 57%, 71%, 100% { opacity: 0; }
-      61%, 67% { opacity: 0.55; }
-    }
-
-    @keyframes node-travel {
-      0%, 3% { opacity: 0; transform: translate(64px, 185px); }
-      5% { opacity: 0.9; transform: translate(64px, 185px); }
-      9% { transform: translate(116px, 185px); }
-      12% { transform: translate(126px, 168px); }
-      15% { transform: translate(138px, 202px); }
-      18% { transform: translate(151px, 151px); }
-      21% { transform: translate(164px, 193px); }
-      24% { transform: translate(176px, 176px); }
-      27% { transform: translate(269px, 185px); }
-      34% { transform: translate(397px, 185px); }
-      38% { transform: translate(444px, 185px); }
-      41% { transform: translate(454px, 175px); }
-      44% { transform: translate(464px, 195px); }
-      47% { transform: translate(476px, 158px); }
-      50% { transform: translate(488px, 199px); }
-      53% { transform: translate(500px, 169px); }
-      56% { transform: translate(512px, 190px); }
-      59% { transform: translate(603px, 185px); }
-      66% { transform: translate(731px, 185px); }
-      70% { transform: translate(777px, 185px); }
-      73% { transform: translate(777px, 167px); }
-      76% { transform: translate(809px, 167px); }
-      79% { transform: translate(809px, 201px); }
-      82% { transform: translate(842px, 201px); }
-      85% { transform: translate(842px, 174px); }
-      88% { opacity: 0.9; transform: translate(936px, 185px); }
-      90%, 100% { opacity: 0; transform: translate(936px, 185px); }
-    }
-
-    @keyframes final-pulse {
-      0%, 86% { opacity: 0; transform: scale(0.65); }
-      89% { opacity: 0.55; transform: scale(0.85); }
-      94% { opacity: 0; transform: scale(1.8); }
-      100% { opacity: 0; transform: scale(1.8); }
+    @keyframes endpoint-pulse {
+      0%, 82%, 94%, 100% { opacity: 0; }
+      87% { opacity: 0.7; }
+      91% { opacity: 0.22; }
     }
 
     @media (prefers-reduced-motion: reduce) {
-      .signal-left,
-      .signal-center,
-      .signal-right,
-      .signal-bridge,
+      .signal-flow,
+      .communication-accent,
+      .audio-accent,
+      .digital-accent,
       .travel-node,
-      .final-pulse {
+      .endpoint-pulse {
         animation: none !important;
-        opacity: 0 !important;
+        display: none !important;
       }
     }
   </style>
 
   <rect x="1" y="1" width="998" height="248" rx="18" fill="#F2F3EA" stroke="#D8D1C3" stroke-width="2"/>
-  <path d="M333.5 48V202M666.5 48V202" fill="none" stroke="#D8D1C3" stroke-width="1"/>
-
-  <g fill="none" stroke="#CAD7CE" stroke-width="1.5" opacity="0.7">
-    <path d="M64 185H116L126 168L138 202L151 151L164 193L176 176L187 185H269"/>
-    <path d="M397 185H444L454 175L464 195L476 158L488 199L500 169L512 190L524 180H603"/>
-    <path d="M731 185H777V167H809V201H842V174H875V185H936"/>
-  </g>
-
-  <g fill="#A8754F">
-    <circle cx="64" cy="185" r="3"/>
-    <circle cx="269" cy="185" r="3"/>
-    <circle cx="397" cy="185" r="3"/>
-    <circle cx="603" cy="185" r="3"/>
-    <circle cx="731" cy="185" r="3"/>
-    <circle cx="936" cy="185" r="3"/>
-  </g>
-
-  <path class="signal-left" d="M64 185H116L126 168L138 202L151 151L164 193L176 176L187 185H269"/>
-  <path class="signal-bridge bridge-one" d="M269 185H397"/>
-  <path class="signal-center" d="M397 185H444L454 175L464 195L476 158L488 199L500 169L512 190L524 180H603"/>
-  <path class="signal-bridge bridge-two" d="M603 185H731"/>
-  <path class="signal-right" d="M731 185H777V167H809V201H842V174H875V185H936"/>
-  <circle class="travel-node" cx="0" cy="0" r="4"/>
-  <circle class="final-pulse" cx="936" cy="185" r="8"/>
+  <path d="M333.333 32V132M666.667 32V132" fill="none" stroke="#D8D1C3" stroke-width="1"/>
 
   <g font-family="Arial, Helvetica, sans-serif" text-anchor="middle">
-    <text x="167" y="91" fill="#A8754F" font-size="13" font-weight="700" letter-spacing="2.2">PERSONAL EMAIL</text>
-    <text x="167" y="126" fill="#355B4B" font-size="22" font-weight="600" letter-spacing="1">DIRECT CONTACT</text>
+    <text x="166.667" y="66" fill="#A8754F" font-size="13" font-weight="700" letter-spacing="2.2">PERSONAL EMAIL</text>
+    <text x="166.667" y="103" fill="#355B4B" font-size="22" font-weight="600" letter-spacing="1">DIRECT CONTACT</text>
 
-    <text x="500" y="91" fill="#A8754F" font-size="13" font-weight="700" letter-spacing="2.2">YOUTUBE</text>
-    <text x="500" y="126" fill="#355B4B" font-size="22" font-weight="600" letter-spacing="1">WEEKLY BACKING TRACK</text>
+    <text x="500" y="66" fill="#A8754F" font-size="13" font-weight="700" letter-spacing="2.2">YOUTUBE</text>
+    <text x="500" y="103" fill="#355B4B" font-size="22" font-weight="600" letter-spacing="1">WEEKLY BACKING TRACK</text>
 
-    <text x="833" y="91" fill="#A8754F" font-size="13" font-weight="700" letter-spacing="2.2">JAM TRACKS HUB</text>
-    <text x="833" y="126" fill="#355B4B" font-size="22" font-weight="600" letter-spacing="1">MUSIC PLATFORM</text>
+    <text x="833.333" y="66" fill="#A8754F" font-size="13" font-weight="700" letter-spacing="2.2">JAM TRACKS HUB</text>
+    <text x="833.333" y="103" fill="#355B4B" font-size="22" font-weight="600" letter-spacing="1">MUSIC PLATFORM</text>
+  </g>
+
+  <path
+    id="contact-signal"
+    d="M50 178H108L121 164L134 192L149 148L164 197L179 160L194 178H350H388L400 170L412 186L425 158L438 194L451 150L464 200L477 157L490 190L503 165L516 185L530 173L544 178H650H708V154H752V198H796V162H840V190H884V178H950"
+    pathLength="1000"
+    fill="none"
+    stroke="#CAD7CE"
+    stroke-width="1.8"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+
+  <g fill="#A8754F">
+    <circle cx="50" cy="178" r="3"/>
+    <circle cx="333.333" cy="178" r="2.5"/>
+    <circle cx="666.667" cy="178" r="2.5"/>
+    <circle cx="950" cy="178" r="3"/>
+  </g>
+
+  <use class="signal-flow" href="#contact-signal" xlink:href="#contact-signal"/>
+  <path class="communication-accent" d="M50 178H108L121 164L134 192L149 148L164 197L179 160L194 178H333.333"/>
+  <path class="audio-accent" d="M350 178H388L400 168L412 188L425 154L438 198L451 146L464 204L477 153L490 194L503 162L516 188L530 171L544 178H650"/>
+  <path class="digital-accent" d="M666.667 178H708V154H752V198H796V162H840V190H884V178H950"/>
+
+  <circle class="travel-node" cx="0" cy="0" r="4.5">
+    <animate attributeName="opacity" values="0;0.95;0.95;0;0" keyTimes="0;0.05;0.84;0.88;1" dur="6s" repeatCount="indefinite"/>
+    <animateMotion dur="6s" repeatCount="indefinite" keyPoints="0;0;1;1" keyTimes="0;0.05;0.84;1" calcMode="linear">
+      <mpath href="#contact-signal" xlink:href="#contact-signal"/>
+    </animateMotion>
+  </circle>
+  <circle class="endpoint-pulse" cx="950" cy="178" r="10"/>
+
+  <g fill="#D8D1C3">
+    <circle cx="166.667" cy="222" r="2"/>
+    <circle cx="500" cy="222" r="2"/>
+    <circle cx="833.333" cy="222" r="2"/>
   </g>
 </svg>

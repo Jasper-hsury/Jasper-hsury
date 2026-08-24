@@ -89,7 +89,5 @@ An open-source academic resource platform for organizing and sharing past exams,
 </picture>
 
 <p align="center">
-  <a href="mailto:jasperhsu941029@gmail.com"><img src="./assets/contact-personal-email.svg" alt="Personal Email" height="36"></a>
-  <a href="https://www.youtube.com/@Weekly_Backing_Track"><img src="./assets/contact-youtube.svg" alt="YouTube" height="36"></a>
-  <a href="mailto:Jamtrackshubwork@gmail.com"><img src="./assets/contact-jamtrackshub-email.svg" alt="Jam Tracks Hub Email" height="36"></a>
+  <a href="mailto:jasperhsu941029@gmail.com"><img src="./assets/contact-personal-email.svg" alt="Personal Email" width="33.333%"></a><a href="https://www.youtube.com/@Weekly_Backing_Track"><img src="./assets/contact-youtube.svg" alt="YouTube" width="33.333%"></a><a href="mailto:Jamtrackshubwork@gmail.com"><img src="./assets/contact-jamtrackshub-email.svg" alt="Jam Tracks Hub Email" width="33.333%"></a>
 </p>
