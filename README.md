@@ -1,5 +1,8 @@
 <p align="center">
-  <img src="./assets/banner.png" alt="Jasper Hsu — Mechanical Engineering, Music, and Software" width="100%">
+  <picture>
+    <source srcset="./assets/banner-animated.gif" type="image/gif">
+    <img src="./assets/banner.png" alt="Jasper Hsu — Mechanical Engineering, Music, and Software" width="100%">
+  </picture>
 </p>
 
 <p align="center">Mechanical engineering student who plays music, runs a YouTube channel, and develops software.</p>
@@ -80,7 +83,10 @@ An open-source academic resource platform for organizing and sharing past exams,
 
 ## 04 / Contact
 
-<img src="./assets/contact-panel.svg" alt="Contact channels: personal email, YouTube, and Jam Tracks Hub" width="100%">
+<picture>
+  <source srcset="./assets/contact-panel-animated.svg" type="image/svg+xml">
+  <img src="./assets/contact-panel.svg" alt="Contact channels: personal email, YouTube, and Jam Tracks Hub" width="100%">
+</picture>
 
 <p align="center">
   <a href="mailto:jasperhsu941029@gmail.com"><img src="./assets/contact-personal-email.svg" alt="Personal Email" height="36"></a>
