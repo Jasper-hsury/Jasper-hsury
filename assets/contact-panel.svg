@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="250" viewBox="0 0 1000 250" role="img" aria-labelledby="title desc">
+  <title id="title">Contact</title>
+  <desc id="desc">Personal email, Weekly Backing Track on YouTube, and the Jam Tracks Hub music platform</desc>
+
+  <rect x="1" y="1" width="998" height="248" rx="18" fill="#F2F3EA" stroke="#D8D1C3" stroke-width="2"/>
+  <path d="M333.5 48V202M666.5 48V202" fill="none" stroke="#D8D1C3" stroke-width="1"/>
+
+  <g fill="none" stroke="#CAD7CE" stroke-width="1.5" opacity="0.7">
+    <path d="M64 185H116L126 168L138 202L151 151L164 193L176 176L187 185H269"/>
+    <path d="M397 185H444L454 175L464 195L476 158L488 199L500 169L512 190L524 180H603"/>
+    <path d="M731 185H777V167H809V201H842V174H875V185H936"/>
+  </g>
+
+  <g fill="#A8754F">
+    <circle cx="64" cy="185" r="3"/>
+    <circle cx="269" cy="185" r="3"/>
+    <circle cx="397" cy="185" r="3"/>
+    <circle cx="603" cy="185" r="3"/>
+    <circle cx="731" cy="185" r="3"/>
+    <circle cx="936" cy="185" r="3"/>
+  </g>
+
+  <g font-family="Arial, Helvetica, sans-serif" text-anchor="middle">
+    <text x="167" y="91" fill="#A8754F" font-size="13" font-weight="700" letter-spacing="2.2">PERSONAL EMAIL</text>
+    <text x="167" y="126" fill="#355B4B" font-size="22" font-weight="600" letter-spacing="1">DIRECT CONTACT</text>
+
+    <text x="500" y="91" fill="#A8754F" font-size="13" font-weight="700" letter-spacing="2.2">YOUTUBE</text>
+    <text x="500" y="126" fill="#355B4B" font-size="22" font-weight="600" letter-spacing="1">WEEKLY BACKING TRACK</text>
+
+    <text x="833" y="91" fill="#A8754F" font-size="13" font-weight="700" letter-spacing="2.2">JAM TRACKS HUB</text>
+    <text x="833" y="126" fill="#355B4B" font-size="22" font-weight="600" letter-spacing="1">MUSIC PLATFORM</text>
+  </g>
+</svg>

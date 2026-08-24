@@ -80,6 +80,10 @@ An open-source academic resource platform for organizing and sharing past exams,
 
 ## 04 / Contact
 
-<a href="mailto:jasperhsu941029@gmail.com"><img src="./assets/contact-personal-email.svg" alt="Personal Email" height="36"></a>
-<a href="https://www.youtube.com/@Weekly_Backing_Track"><img src="./assets/contact-youtube.svg" alt="YouTube" height="36"></a>
-<a href="mailto:Jamtrackshubwork@gmail.com"><img src="./assets/contact-jamtrackshub-email.svg" alt="Jam Tracks Hub Email" height="36"></a>
+<img src="./assets/contact-panel.svg" alt="Contact channels: personal email, YouTube, and Jam Tracks Hub" width="100%">
+
+<p align="center">
+  <a href="mailto:jasperhsu941029@gmail.com"><img src="./assets/contact-personal-email.svg" alt="Personal Email" height="36"></a>
+  <a href="https://www.youtube.com/@Weekly_Backing_Track"><img src="./assets/contact-youtube.svg" alt="YouTube" height="36"></a>
+  <a href="mailto:Jamtrackshubwork@gmail.com"><img src="./assets/contact-jamtrackshub-email.svg" alt="Jam Tracks Hub Email" height="36"></a>
+</p>
